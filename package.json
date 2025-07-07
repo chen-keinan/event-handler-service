@@ -1,0 +1,28 @@
+{
+    "name": "my-rabbitmq-service",
+    "version": "1.0.0",
+    "main": "dist/main.js",
+    "license": "MIT",
+    "scripts": {
+        "dev": "ts-node src/main.ts",
+        "build": "tsc",
+        "test": "jest",
+        "start": "node dist/main.js",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "amqplib": "^0.10.3",
+        "dotenv": "^16.3.1",
+        "mongodb": "^5.1.0"
+    },
+    "devDependencies": {
+        "@types/amqplib": "^0.10.7",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^20.5.1",
+        "jest": "^30.0.4",
+        "testcontainers": "^11.2.0",
+        "ts-jest": "^29.4.0",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.4.5"
+    }
+}
